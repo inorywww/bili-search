@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script charset="utf-8" src="../static/js/jquery-3.3.1.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    $(function () {
+        $("#btn").click(function () {            let data = {};
+            data['name'] = $('#NAME2').val();
+            data['age'] = $('#AGE2').val();
+            {#$("#h").attribute("src", "www.bilibili.com");#}
+            $.ajax({
+                url: "/query",
+                type: "POST",
+                dataType: "json",
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=UTF-8',
+                success: function (data) {
+                    $("#NAME").val(data['name']);
+                    $("#AGE").val(data['age']);
+                    console.log("data")
+                }
+            })
+        })
+    })
+</script>
+<body>
+<p>数据展示：
+    <input type="text" id="NAME">
+    <input type="text" id="AGE"></p>
+<p>
+    <button id="btn">点击获取</button>
+    <input type="text" id="NAME2">
+    <input type="text" id="AGE2">
+</p>
+
+
+</body>
+</html>

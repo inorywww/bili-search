@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 12px Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+li, ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    color: #00a1d6;
+    cursor: pointer;
+}
+
+
+.home-wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.home-logo {
+
+    text-align: center;
+    margin: 40px auto 20px;
+    width: 284px;
+    height: 68px;
+    background: transparent url(//s1.hdslb.com/bfs/static/jinkela/search/assets/search_index_logo_v2.4.png) no-repeat 50%;
+}
+
+.home-wrap .home-input {
+    width: 632px;
+    margin: 0 auto 15px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.home-wrap .home-input .type {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ccd0d7;
+    transition: border .1s linear;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 7px;
+}
+
+.home-wrap .home-input .default {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.home-wrap .home-input .type .arrow-down {
+    margin-left: 5px;
+    background-position: -442px -439px;
+}
+
+.arrow-down, .arrow-up {
+    background-image: url(https://i.loli.net/2020/12/24/KIc58jzwMlCyGpv.png);
+    width: 12px;
+    height: 6px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 3px;
+}
+
+
+.home-wrap .home-input .list {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccd0d7;
+    border-top: 0;
+    z-index: 5000;
+    border-radius: 0 0 4px 4px;
+    top: 40px;
+}
+
+.home-wrap .home-input .list li {
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 114px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.home-wrap .home-input .content {
+    float: left;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 10px;
+    height: 40px;
+    color: #222;
+    width: 374px;
+
+}
+
+
+.home-wrap .home-input .searchBtn {
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #00a1d6;
+    color: #fff;
+    border: 1px solid #008cd2;
+    width: 110px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+}
+
+
+.home-wrap .home-suggest {
+    width: 980px;
+    padding-top: 81px;
+    margin-top: -5px;
+    margin-bottom: 45px;
+    background: transparent url(//s1.hdslb.com/bfs/static/jinkela/search/assets/search_2233_bg.png) no-repeat top;
+}
+
+.home-wrap .home-suggest .hot-search {
+    float: left;
+    width: 390px;
+    height: 340px;
+    padding: 20px 10px 20px 20px;
+    margin-right: 10px;
+    margin-left: 155px;
+    border: 1px solid #ddd;
+}
+
+.home-wrap .home-suggest .title {
+    position: relative;
+    font-size: 20px;
+    margin-left: 23px;
+}
+
+.home-wrap .home-suggest .hotlist {
+    width: 160px;
+    float: left;
+    margin-right: 35px;
+}
+
+.home-wrap .home-suggest .title .title-icon.hot {
+    background-position: -1px -1px;
+}
+
+.home-wrap .home-suggest .title .title-icon {
+    position: absolute;
+    display: inline-block;
+    right: 100%;
+    width: 34px;
+    height: 28px;
+    background: url(//s1.hdslb.com/bfs/static/jinkela/search/assets/search_title_icon.png) no-repeat;
+}
+
+.home-wrap .home-suggest .title .subtitle {
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.home-wrap .home-suggest .hotlist .item {
+    width: 160px;
+    border-bottom: 1px dotted #eee;
+    line-height: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+.home-wrap .home-suggest .hotlist .item .word a{
+    color: #000;
+}
+.home-wrap .home-suggest .hot-search .item .num.special {
+    background-color: #f489ad;
+}
+
+.home-wrap .home-suggest .hotlist .num {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    color: #fff;
+    line-height: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #aaa;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.home-wrap .home-suggest .hot-search .item {
+    cursor: pointer;
+}
+
+.home-wrap .home-suggest .history {
+    float: left;
+    width: 175px;
+    height: 340px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.home-wrap .home-suggest .title {
+    position: relative;
+    font-size: 20px;
+    margin-left: 23px;
+}
+
+.home-wrap .home-suggest .title .title-icon.time {
+    background-position: -1px -38px;
+}
+
+.home-wrap .home-suggest .title .title-icon {
+    position: absolute;
+    display: inline-block;
+    right: 100%;
+    width: 34px;
+    height: 28px;
+    background: url(//s1.hdslb.com/bfs/static/jinkela/search/assets/search_title_icon.png) no-repeat;
+}
+
+.home-wrap .home-suggest .title .delete-history {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: 22px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.home-wrap .home-suggest .title .delete-history .icon-garbage {
+    /*background: transparent url(//s1.hdslb.com/bfs/static/jinkela/search/assets/search_icon.png) no-repeat 0 -150px;*/
+    /*width: 10px;*/
+    /*height: 12px;*/
+    margin-bottom: 3px;
+    margin-right: 2px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.home-wrap .home-suggest .title .delete-history .icon-garbage:hover{
+    color: #00a1d6;
+}
+.home-wrap .home-suggest .title .subtitle {
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.home-wrap .home-suggest .history .list .item {
+    width: 150px;
+    border-bottom: 1px dotted #eee;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.home-wrap .home-suggest .history .list .item a {
+    color: #222;
+}
+

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 12px Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+li, ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    color: #00a1d6;
+    cursor: pointer;
+}
+
+
+.home-wrap .suggest-wrap {
+    top: 42px;
+    left: 115px;
+    width: 393px;
+}
+
+.suggest-wrap {
+    border: 1px solid #e5e9ef;
+    position: absolute;
+    width: 327px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 0;
+    color: #222;
+    background: #fff;
+    z-index: 100;
+    overflow: hidden;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.16);
+}
+
+.suggest-wrap .keyword-wrap em {
+    /*padding: 0 20px;*/
+    color: #f25d8e;
+}
+.suggest-wrap .keyword-wrap li:hover{
+    background-color: #ccc;
+}
+.suggest-wrap .vt-text {
+    height: 32px;
+    display: block;
+    line-height: 32px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    color: #222;
+    padding: 0 20px;
+    margin: 0 0 4px;
+}
